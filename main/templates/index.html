@@ -1,11 +1,12 @@
+{% load static %}
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ToDo</title>
-        <link rel="stylesheet" href="/todo/main/templeates/css/style.css">
-        <link rel="stylesheet" href="/todo/main/templeates/css/checkbox.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/checkbox.css' %}">
     </head>
     <body>
       <section>
@@ -29,8 +30,8 @@
             <div class="todo_item_footer">
               <p>05.01.21 <span>13:00</span></p>
               <div class="action_buttons">
-                <img src="/todo/main/templeates/icons/star.png" />
-                <img src="/todo/main/templeates/icons/delete.png" />
+                <img src="{% static 'icons/star.png' %}" />
+                <img src="{% static 'icons/delete.png' %}" />
               </div>
             </div>
           </div>
@@ -45,8 +46,8 @@
             <div class="todo_item_footer">
               <p>15.01.21 <span>10:00</span></p>
               <div class="action_buttons">
-                <img src="/todo/main/templeates/icons/star.png" />
-                <img src="/todo/main/templeates/icons/delete.png" />
+                <img src="{% static 'icons/star.png' %}" />
+                <img src="{% static 'icons/delete.png' %}" />
               </div>
             </div>
           </div>
@@ -61,8 +62,8 @@
             <div class="todo_item_footer">
               <p>06.01.21 <span>17:00</span></p>
               <div class="action_buttons">
-                <img src="/todo/main/templeates/icons/star.png" />
-                <img src="/todo/main/templeates/icons/delete.png" />
+                <img src="{% static 'icons/star.png' %}" />
+                <img src="{% static 'icons/delete.png' %}" />
               </div>
             </div>
           </div>
@@ -77,8 +78,8 @@
             <div class="todo_item_footer">
               <p>06.01.21 <span>15:00</span></p>
               <div class="action_buttons">
-                <img src="/todo/main/templeates/icons/star.png" />
-                <img src="/todo/main/templeates/icons/delete.png" />
+                <img src="{% static 'icons/star.png' %}" />
+                <img src="{% static 'icons/delete.png' %}" />
               </div>
             </div>
           </div>
@@ -93,8 +94,8 @@
             <div class="todo_item_footer">
               <p>11.01.21 <span>11:00</span></p>
               <div class="action_buttons">
-                <img src="/todo/main/templeates/icons/star.png" />
-                <img src="/todo/main/templeates/icons/delete.png" />
+                <img src="{% static 'icons/star.png' %}" />
+                <img src="{% static 'icons/delete.png' %}" />
               </div>
             </div>
           </div>
@@ -109,13 +110,13 @@
             <div class="todo_item_footer">
               <p>05.01.21 <span>22:00</span></p>
               <div class="action_buttons">
-                <img src="/todo/main/templeates/icons/star.png" />
-                <img src="/todo/main/templeates/icons/delete.png" />
+                <img src="{% static 'icons/star.png' %}" />
+                <img src="{% static 'icons/delete.png' %}" />
               </div>
             </div>
           </div>
         </div>
       </section>
-      <script src="/todo/main/templeates/js/script.js"></script>
+      <!-- <script src="/todo/main/templeates/js/script.js"></script> -->
     </body>
 </html>
