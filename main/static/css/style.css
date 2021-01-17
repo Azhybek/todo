@@ -108,3 +108,10 @@ section{
     margin: 0 5px;
     cursor: pointer;
 }
+
+.title_delete{
+    color: brown;
+    font-family: serif;
+    font-size: 24px;
+    background-color: brown;
+}
