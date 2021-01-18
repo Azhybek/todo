@@ -23,6 +23,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path("", homepage, name="home"),
     path('test/', test, name="test"),
-    path('book/', test, name="book")
+    path('test2/', test2, name="test2")
 ]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
     + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
