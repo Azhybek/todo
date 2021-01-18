@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Book</title>
+    </head>
+    <body>
+        <h1>Книги</h1>
+        <div>Записи книг (дз-32)</div>
+        {% for book in book_list  %}
+            {% book.title %}
+            {% book.price %}
+            {% book.author %}
+        {% endfor %}
+    </body>
+</html>
