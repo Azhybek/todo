@@ -20,4 +20,12 @@ def add_todo(request):
     todo.save()
     return redirect(test)
 
+def add_book(request):
+    form = request.POST
+    bookstor = book(title=form['book-title'], subtitle=form['book-subtitle'],
+                         description=form['book-description'], price=form['book-price'], genre=form['book-genre'], author=form['book-author'], year=form['book-year'])
+    bookstor.save()
+
+    return redirect(test2)
+
 # Create your views here.
