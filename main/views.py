@@ -13,4 +13,11 @@ def test2(request):
     book_list = book.objects.all()
     return render(request, "book.html", {"book_list": book_list})
 
+def add_todo(request):
+    form = request.POST
+    text = form["todo_text"]
+    todo = ToDo(text=text)
+    todo.save()
+    return redirect(test)
+
 # Create your views here.
