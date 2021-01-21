@@ -1,122 +1,18 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ToDo</title>
-        <link rel="stylesheet" href="{% static 'css/style.css' %}">
-        <link rel="stylesheet" href="{% static 'css/checkbox.css' %}">
-    </head>
-    <body>
-      <section>
-        <div class="create_container">
-          <input
-            class="create_input"
-            type="text"
-            placeholder="Напишите сюда новую задачу"
-            />
-            <button class="create_button">Добавить</button>
-        </div>
-        <div class="todo_container">
-          <div class="todo_item">
-            <div class="todo_item_header">
-              <label for="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <h4>Купить ноутбук</h4>
-            </div>
-            <div class="todo_item_footer">
-              <p>05.01.21 <span>13:00</span></p>
-              <div class="action_buttons">
-                <img src="{% static 'icons/star.png' %}" />
-                <img src="{% static 'icons/delete.png' %}" />
-              </div>
-            </div>
-          </div>
-          <div class="todo_item marked">
-            <div class="todo_item_header">
-              <label for="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <h4>Оплатить IT курсы</h4>
-            </div>
-            <div class="todo_item_footer">
-              <p>15.01.21 <span>10:00</span></p>
-              <div class="action_buttons">
-                <img src="{% static 'icons/star.png' %}" />
-                <img src="{% static 'icons/delete.png' %}" />
-              </div>
-            </div>
-          </div>
-          <div class="todo_item done">
-            <div class="todo_item_header">
-              <label for="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <h4>Закрыть сессию</h4>
-            </div>
-            <div class="todo_item_footer">
-              <p>06.01.21 <span>17:00</span></p>
-              <div class="action_buttons">
-                <img src="{% static 'icons/star.png' %}" />
-                <img src="{% static 'icons/delete.png' %}" />
-              </div>
-            </div>
-          </div>
-          <div class="todo_item marked">
-            <div class="todo_item_header">
-              <label for="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <h4>Снять интервью</h4>
-            </div>
-            <div class="todo_item_footer">
-              <p>06.01.21 <span>15:00</span></p>
-              <div class="action_buttons">
-                <img src="{% static 'icons/star.png' %}" />
-                <img src="{% static 'icons/delete.png' %}" />
-              </div>
-            </div>
-          </div>
-          <div class="todo_item">
-            <div class="todo_item_header">
-              <label for="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <h4>Записать подкаст</h4>
-            </div>
-            <div class="todo_item_footer">
-              <p>11.01.21 <span>11:00</span></p>
-              <div class="action_buttons">
-                <img src="{% static 'icons/star.png' %}" />
-                <img src="{% static 'icons/delete.png' %}" />
-              </div>
-            </div>
-          </div>
-          <div class="todo_item done">
-            <div class="todo_item_header">
-              <label for="checkbox_container">
-              <input type="checkbox" />
-              <span class="checkmark"></span>
-            </label>
-            <h4>Репетицию по Выборам</h4>
-            </div>
-            <div class="todo_item_footer">
-              <p>05.01.21 <span>22:00</span></p>
-              <div class="action_buttons">
-                <img src="{% static 'icons/star.png' %}" />
-                <img src="{% static 'icons/delete.png' %}" />
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <!-- <script src="/todo/main/templeates/js/script.js"></script> -->
-    </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Main</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+      <br>
+      <p><a href="{% url 'test' %}" class="btn btn-primary btn-lg">Todo проект</a></p>
+      <hr>
+      <p><a href="{% url 'bookstore'%}" class="btn btn-success btn-lg">BookStore проект</a></p>
+    </div>
+</body>
 </html>

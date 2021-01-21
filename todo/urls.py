@@ -21,13 +21,17 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", homepage, name="home"),
-    path('test/', test, name="test"),
-    path('test2/', test2, name="test2"),
-    path("add-todo/", add_todo, name="add-todo"),
-    path("add-book", add_book, name="add-book"),
-    path("delete-todo/<id>/", delete_todo, name="delete-todo"),
-    path("mark-todo/<id>/", mark_todo, name="mark-todo"),
-    path("unmark-todo/<id>/", unmark_todo, name="unmark-todo"),
-]   + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
-    + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
+    path('', homepage, name='home'),
+    path('todo/', test, name='test'),
+    path('book-store/', bookStore, name='bookstore'),
+    path('add-todo/', add_todo, name='add-todo'),
+    path('book-add/', book_add, name='book-add'),
+    path('add-book', add_book, name='book-add-on-the-site'),
+    path('delete-todo/<id>/', delete_todo, name='delete-todo'),
+    path('mark-todo/<id>/', mark_todo, name='mark-todo'),
+    path('delete-book/<id>/', delete_book, name='delete-book'),
+    path('favorite-book/<id>/', favorite_book, name='favorite-book'),
+    path('book-info/<id>/', book_info, name='info-book'),
+    path('close-todo/<id>/', close_todo, name='close-todo')
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT) \
+  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
